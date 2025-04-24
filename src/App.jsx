@@ -21,9 +21,11 @@ const App = () => {
       >
         Generate
       </button>
-      <div className="text-center bg-white rounded-lg shadow p-4">
-        <p className="font-semibold">"{advice && advice.slip.advice}"</p>
-      </div>
+      {advice ? (
+        <div className="text-center bg-white rounded-lg shadow p-4">
+          <p className="font-semibold">"{advice.slip.advice}"</p>
+        </div>
+      ) : null}
     </div>
   );
 };
