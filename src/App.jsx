@@ -13,7 +13,7 @@ const App = () => {
   };
 
   return (
-    <div className="h-[90vh] flex flex-col justify-center items-center bg-gray-50 px-4">
+    <div className="h-screen flex flex-col justify-center items-center bg-gray-50 px-4">
       <h1 className="text-2xl font-bold mb-4">Advice Generator</h1>
       <button
         onClick={getAdvice}
